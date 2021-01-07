@@ -1,17 +1,34 @@
+const path = require(`path`);
 const resolveConfig = require("tailwindcss/resolveConfig");
 const tailwindConfig = require("./tailwind.config.js");
-
 const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
+    title: `Lorenze Jay`,
+    description: `Lorenze Jay Developer Portfolio`,
     author: `@taylorbryant`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -30,9 +47,7 @@ module.exports = {
         postCssPlugins: [
           require(`tailwindcss`)(tailwindConfig),
           require(`autoprefixer`),
-          ...(process.env.NODE_ENV === `production`
-            ? [require(`cssnano`)]
-            : []),
+          ...(process.env.NODE_ENV === `production` ? [require(`cssnano`)] : []),
         ],
       },
     },

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Di Menu",
+    "description": "Di Menu digitalizes restaurants paper menus into QR codes customers can scan.",
+    "technologies": ["MongoDB", "React", "Redux", "Node.js", "Express"],
+    "github": "https://github.com/lorenzejay/dMenu",
+    "demo": "https://dimenu.herokuapp.com/",
+    "image": "../images/dimenu.png"
+  },
+  {
+    "title": "Charis Cheung Preset Shop",
+    "description": "JAM stack built eCommerce store selling Adobe lightroom presets.",
+    "technologies": ["React", "Gatsby", "Graphql"],
+    "github": "https://github.com/lorenzejay/gatsby-ecommerce",
+    "demo": "https://charispresets.com/",
+    "image": "../images/charispresets.png"
+  },
+  {
+    "title": "Uplift Digital Solutions",
+    "description": "A freelance web design and developmenet website.",
+    "technologies": ["React", "SCSS", "Firebase", "Redux"],
+    "github": "https://github.com/lorenzejay/ljaph-minimanote",
+    "demo": "https://ljaph-minimanote.web.app/",
+    "image": "../images/upliftdslight.png"
+  }
+]
