@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import TextAndImage from "../components/textEdit";
 import AboutHome from "../components/about";
 import Works from "../components/works";
+import { AiFillGithub, AiFillTwitterCircle } from "react-icons/ai";
 
 function IndexPage() {
   const data = useStaticQuery(graphql`
@@ -35,6 +36,17 @@ function IndexPage() {
         />
 
         <div className="">
+          <div className="hidden h-96 pt-5 lg:block flex pl-12 flex-col fixed bottom-0 gap-2 items-center ">
+            <span className="transition duration-500 ease-in-out transform hover:mb-5 mb-5">
+              <AiFillGithub size={32} className="cursor-pointer hover:text-green-400 mb-5" />
+            </span>
+
+            <span className="transition duration-500 ease-in-out transform hover:mb-5 mb-5">
+              <AiFillTwitterCircle size={32} className="cursor-pointer hover:text-green-400 mb-5" />
+            </span>
+
+            <div className="bg-gray-200 h-3/4 mt-10 w-0.5 mx-auto"></div>
+          </div>
           {/* <TextAndImage /> */}
           <AboutHome />
           <Works />

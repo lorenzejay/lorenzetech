@@ -2,15 +2,15 @@ import React from "react";
 
 const AboutHome = () => {
   return (
-    <section className="flex items-center justify-center flex-col py-16 bg-gray-800 px-5 text-gray-200">
+    <section className="flex items-center justify-center flex-col py-16 bg-gray-800 px-5 text-gray-200 lg:items-start lg:px-44 lg:py-24 lg:mx-auto">
       <h3 className="uppercase text-gray-400 text-xl">About Me</h3>
-      <h1 className="text-3xl text-center ">Building the Modern Web</h1>
+      <h1 className="text-3xl lg:text-4xl text-center ">Building the Modern Web</h1>
 
       <p className="leading-relaxed mt-5 text-xl">
         <span>👋</span>Hello! I'm Lorenze, a software engineer based in Los Angeles, CA.
       </p>
 
-      <p className="mt-5 text-xl">
+      <p className="mt-5 text-xl lg:w-1/2 leading-loose">
         My passion revolves around combining creativity and technology. Web Development has allowed
         me to bring my creativity to the internet. I do this by designing and implementing
         applications and webstes for the entire world to see.
