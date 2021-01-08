@@ -34,7 +34,7 @@ const Works = () => {
           return (
             <BackgroundImage
               key={i}
-              className="h-48 w-full flex items-center justify-center my-6 lg:h-72 "
+              className="h-56 w-full flex items-center justify-center my-6 lg:h-72 "
               backgroundColor={`#040e18`}
               objectFit="cover"
               fluid={item.image.childImageSharp.fluid}
