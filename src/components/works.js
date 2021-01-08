@@ -34,8 +34,7 @@ const Works = () => {
           return (
             <BackgroundImage
               key={i}
-              style={{ width: "100%" }}
-              className="h-60 flex items-center justify-center my-6 lg:h-96 "
+              className="h-48 w-full flex items-center justify-center my-6 lg:h-72 "
               backgroundColor={`#040e18`}
               objectFit="cover"
               fluid={item.image.childImageSharp.fluid}
@@ -44,11 +43,9 @@ const Works = () => {
                 id="blackOverlay"
                 className="w-full h-full absolute opacity-25 hover:opacity-75 bg-gray-800  "
               ></span> */}
-              <div className="hover:block w-full h-full opacity-80 bg-black  h-64 w-full flex items-start pl-5 justify-center bg-transparent flex-col z-10 lg:justify-end lg:pb-5">
-                <div className="mr-auto mb-5 text-indigo-700 text-pink-600">
-                  <h6 className="mr-auto text-xl">Featured Project</h6>
-
-                  <h1 className="text-white text-2xl">{item.title}</h1>
+              <div className="w-full h-full opacity-0 hover:opacity-80 hover:bg-black flex items-start pl-5 justify-center flex-col z-10 lg:justify-end lg:pb-5 ">
+                <div className="mr-auto mb-5 text-indigo-700 ">
+                  <h1 className=" text-pink-600 text-2xl">{item.title}</h1>
                 </div>
                 <p className="text-white text-sm w-3/4">{item.description}</p>
                 <ul className="flex gap-5 mt-5">
