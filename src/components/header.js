@@ -1,22 +1,24 @@
-import { graphql, useStaticQuery, Link } from "gatsby";
+import { Link } from "gatsby";
 import React, { useState } from "react";
 
 function Header() {
-  const { site } = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  // const { site } = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `);
 
   const [isExpanded, toggleExpansion] = useState(false);
   return (
     <nav className="flex items-center justify-between flex-wrap bg-gray-700 p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <h1 className="uppercase">Lorenze Tech</h1>
+        <Link to="/" className="uppercase text-2xl">
+          Lorenze Tech
+        </Link>
       </div>
       <div className="block lg:hidden">
         <button
@@ -39,24 +41,18 @@ function Header() {
         } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
       >
         <div className="text-sm text-gray-200 lg:flex-grow">
-          <a
-            href="#responsive-header"
+          <Link
+            to="/contact"
             className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
           >
-            Docs
-          </a>
-          <a
-            href="#responsive-header"
+            Contact
+          </Link>
+          <Link
+            to="/about"
             className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
           >
-            Examples
-          </a>
-          <a
-            href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
-          >
-            Blog
-          </a>
+            About
+          </Link>
         </div>
       </div>
     </nav>

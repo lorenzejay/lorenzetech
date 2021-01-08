@@ -24,7 +24,11 @@ function Hero({ image, image2 }) {
             </button>
           </div>
 
-          <img className="rounded-full h-44 w-44 my-5 lg:h-96 lg:w-96 object-cover" src={image2} />
+          <img
+            className="rounded-full h-44 w-44 my-5 lg:h-96 lg:w-96 object-cover"
+            src={image2}
+            alt="You missing out on how I look."
+          />
         </div>
       </div>
     </BackgroundImage>

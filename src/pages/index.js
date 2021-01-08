@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import Hero from "../components/Hero";
 import { graphql, useStaticQuery } from "gatsby";
-import TextAndImage from "../components/textEdit";
+
 import AboutHome from "../components/about";
 import Works from "../components/works";
 import { AiFillGithub, AiFillTwitterCircle } from "react-icons/ai";
@@ -36,7 +36,7 @@ function IndexPage() {
         />
 
         <div className="">
-          <div className="hidden h-96 pt-5 lg:block flex pl-12 flex-col fixed bottom-0 gap-2 items-center ">
+          <div className="hidden h-96 pt-5 lg:block lg:flex pl-12 flex-col fixed bottom-0 gap-2 items-center ">
             <span className="transition duration-500 ease-in-out transform hover:mb-5 mb-5">
               <AiFillGithub size={32} className="cursor-pointer hover:text-green-400 mb-5" />
             </span>

@@ -7,7 +7,10 @@ const AboutHome = () => {
       <h1 className="text-3xl lg:text-4xl text-center ">Building the Modern Web</h1>
 
       <p className="leading-relaxed mt-5 text-xl">
-        <span>👋</span>Hello! I'm Lorenze, a software engineer based in Los Angeles, CA.
+        <span role="img" aria-label="waving emoji">
+          👋
+        </span>
+        Hello! I'm Lorenze, a software engineer based in Los Angeles, CA.
       </p>
 
       <p className="mt-5 text-xl lg:w-1/2 leading-loose">

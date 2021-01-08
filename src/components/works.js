@@ -60,12 +60,12 @@ const Works = () => {
                 </ul>
                 <ul className="flex gap-2 mt-1">
                   <li>
-                    <a href={item.github} target="_blank">
+                    <a href={item.github} target="_blank" rel="noreferrer">
                       <AiFillGithub />
                     </a>
                   </li>
                   <li>
-                    <a href={item.demo}>
+                    <a href={item.demo} target="_blank" rel="noreferrer">
                       <AiOutlineLaptop />
                     </a>
                   </li>
